@@ -1,0 +1,30 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 50% 45%;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: 50% 45%;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.spinner {
+  width: 4em;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.text {
+  font-size: 2em;
+}
